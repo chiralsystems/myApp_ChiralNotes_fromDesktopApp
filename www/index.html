@@ -25,6 +25,7 @@
       					<h2 class="panel-title">Sign In</h2>
       				</div>
       				<div class="panel-body" style="background-color:#fdfdfd">
+      				<form action="http://192.168.0.53:8080/H35WebServer/NotesLogin" method="get">
       					<div class="input-group" style="margin-bottom:12px;">
       						<span class="input-group-addon glyphicon glyphicon-user" style="top:0"></span>
       						<input type="text" name="user" id="userName" class="form-control input-lg chat-input" placeholder="Login" />
@@ -36,7 +37,7 @@
       					<div class="checkbox" style="margin-bottom:12px">
       					  <label style="font-weight:200;font-size:150%;"><input type="checkbox"> Remember me</label>
       					</div> 
-                <div class="btn btn-primary btn-lg btn-block input-lg btn-custom" onclick="ajaxValidate()">Submit</div>
+                		<button class="btn btn-primary btn-lg btn-block input-lg btn-custom">Submit</button>
       				</div>
             </div>
         </div>
@@ -50,20 +51,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <script>
-    function ajaxValidate(){
-      $.post('http://192.168.0.53:8080/H35WebServer/NotesLogin', {user:$('#userName').val(),pass:$('#userPassword').val()},
-        function(result){
-          if(result != 'Fail'){
-            window.location.replace('http://192.168.0.53:8080'+result);
-          }
-          else{
-            window.alert('Failed!');
-          }
-        }
-      )
-    };
-    </script>
 	<script type="text/javascript">
 		app.initialize();
 	</script>
