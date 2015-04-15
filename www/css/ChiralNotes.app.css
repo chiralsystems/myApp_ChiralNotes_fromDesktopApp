@@ -1,0 +1,9 @@
+h2,h1{font-size:60px}
+h5{font-size:20px;font-weight:200}
+button{font-size:40px;font-weight:300}
+.dropdown-menu a{font-size:40px;font-weight:200 !important}
+.panel{margin-bottom:48px;}
+a:hover,a:focus,a:active{text-decoration:none !important;}
+.checkbox input[type="checkbox"]{margin:12px 0 0;margin-left:-29px}
+.checkbox label, .radio label{font-size:2em;padding-left:30px}
+.btn-custom{font-size:3em;height:2em}
